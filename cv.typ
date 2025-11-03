@@ -11,51 +11,36 @@
     linkedin: "zolkko",
     website: "https://blumen.place",
   ),
-  profile-picture: image("zolkko.png"),
+  // profile-picture: image("zolkko.png"),
 )
 
 
 #side[
   = Contact
   #contact-info()
-
-  #v(1fr)
+  \
   #social-links()
+  \
 
   = Skills
 
   == Programming Languages
 
-  #item-with-level("Rust", 5)
-  #item-with-level("Scala", 5)
-  #item-with-level("Python", 5)
-  #item-with-level("TypeScript", 2)
-  #item-with-level("SQL", 3)
+  Rust, Scala, Python, SQL
 
-  #v(2fr)
+  \
 
-  == Databases
+  == Databases, storage formats and a like.
 
-  #item-with-level("PostgreSQL", 4)
-  #item-with-level("Apache Kafka", 4)
-  #item-with-level("Redis", 4)
+  PostgreSQL, Redis, Apache Kafka, Apache Arrow
 
+  \
+
+  == Others:
+
+  Apache Spark, Slurm
+  
   #v(1fr)
-
-  == SVC and CI/CD:
-
-  #item-with-level("git", 4)
-  #item-with-level("gitlab-ci", 3)
-  #item-with-level("gitlab-ci", 3)
-
-  #v(1fr)
-
-  == SVC and CI/CD:
-
-  #item-with-level("React-Native", 3)
-  #item-with-level("NextJS", 2)
-  #item-with-level("Apache Spark", 3)
-  #item-with-level("Slurm", 4)
 
   = Languages
 
@@ -68,11 +53,22 @@
 = About Me
 
 #entry([
-  I am a professional programmer with more than 15 years of experience.
-  In recent years, I have been working as a Rust/Scala HPC programmer in biotech.
-  I mainly worked on Healthcare and Life science related projects and formally trained as a bioinformatician throughout my career.
-  Yet I also participated in the backed-end development of a famous MMO game, IoT framework,
-  a London minicab automation system, and bus station automation. 
+  I am a seasoned professional programmer with more than 20 years of experience in various fields and domains.
+
+
+  In recent years, I have worked as a Rust HPC programmer in the biotech field, specializing in optimizing the performance and resource usage of biostatistical pipelines.
+  My extensive experience as a Scala developer has given me a solid understanding of functional and type-level programming,
+  which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers.
+
+  Additionally, I have completed graduate-level courses in Bioinformatics, Whole Genome (WGS) and Single-Cell Sequencing,
+  and Genomic Networks. This formal training demonstrates my passion and dedication to delivering top-quality software,
+  as truly effective solutions require a deep understanding of the field.
+
+  My efforts, to a sensible extent, helped biologists to develop at least two molecules for treating orphan diseases,
+  and one of them is out of clinical trials.
+
+  Besides that I have contributed to the back-end development of a well-known MMO game, an IoT framework,
+  a London minicab automation system, and a bus station automation project.
 ])
 
 
@@ -95,33 +91,60 @@
 
 #entry(
   title: "HPC, Rust programmer",
-  institution: "BPGBio, DataArt Balkans",
-  location: "Belgrade, Serbia",
+  institution: "BPGBio",
   date: "2019 - Present",
   [
   The project aim was to learn the structure of biological networks from omics data assessed
   with patient data using a combined constraint-based approach and Bayesian score-based method
   (a framework based on S. Boettcher deal package) in a distributed environment.
 
+  \
 
   My responsibilies were:
-  - Porting of R, Python and Wolfram Mathematica scripts, produced by mathematicians to Rust;
   - Performance optimization and tuning using vtune, mpip, heaptrack, dhat,
     llvm sanitizers, criterion and iai (cachegrind);
   - Algorithms optimization;
-  - Developing and maintaining open source components: `kendalls` crate for Kendall’s tau-b rank correlation,
-    `hocon` crate - a peg parser and deserializer of Akka hocon configuration files;
+  - Porting of R, Python and Wolfram Mathematica scripts, produced by mathematicians to Rust;
   - Contributed missing functionality to `special` crate (tri-gamma function),
     `rsmpi` (group splitting by colors and tags, User Level Failure Mitigation);
   - Design and implementation of auxiliary programs requested by the analytics department;
-  - Writing user and programmer guides, software design documents (tectonic, latex, confluence);
+  - Writing user and programmer guides, software design documents (tectonic, latex, confluence), SOWs;
   - Automation of development and deployment processes (gitlab-ci, docker);
   - HTTP API development using axum, utoipa and http4s for Scala-based services;
-  - Implementing automated tests (property, unit, integration and e2e) and benchmarks;
+  - Implementing automated tests (property, unit, mutation, integration and e2e) and benchmarks (criterion, iai);
   - Onboarding and technical-leading, helping team members to develop professional development plans,
     conducting technical interviews, mentoring and conduction summer schools for rust programmers;
-  - Implementing the job scheduling framework on top of Mesos;
-  - Bug fixing in HPC cluster environment.
+  - Bug fixing in HPC cluster environment (pmpi, vtune);
+  - Developing and maintaining open source components required by our software: `kendalls` crate for Kendall’s tau-b rank correlation,
+  `hoconlight` crate - a peg parser and deserializer of Akka hocon configuration files.
+
+  \
+
+  Stack: Rust, Apache Arrow, BLAS/LAPACK (ndarray-linalg), MPI, Slurm, Apache Kafka
+  ]
+)
+
+
+#entry(
+  title: "Scala programmer",
+  institution: "Berg Biosystems",
+  date: "2016 - 2019",
+  [
+  Design and Developed Mesos Framework to schedule and execute bioinformatics pipelines.
+  The framework mostly based on Lightbend stack with addition of TypeLevel stack (circe, cats-effect, fs2)
+  for more lightweight utilities and more granular control of task termination.
+
+  \
+
+  My responsibilies were:
+  - Developing utilities used in biostatistical pipelines;
+  - Writing user guides, SOWs, RFCs;
+  - Reviewing DOI:10.1089/cmb.2019.0210, DOI:10.3390/app11062466;
+  - Coordinating two teams of developers, resolving conflic situations;
+
+  \
+
+  Stack: Apache Mesos, Scala 2, Lightbend stack, TypeLevel stack, Apache Kafka
   ]
 )
 
@@ -129,12 +152,10 @@
 #entry(
   title: "Senior Software Developer",
   institution: "DataArt",
-  location: "Voronezh, Russia",
-  date: "2016-2017",
+  date: "2016-2016",
   [
-    Medical Analytics Performance Portal.
     US-based healthcare network and healthcare provider.
-    The project aimed to develop a pluggable module, that
+    I was working on a pluggable module, that
     acted as a mediator between Medicaid Analytics Performance Portal (MAPP) HHTS
     and the internal Health Home system of the client.
     The module I developed aggregated data and events in the form of Web API call
@@ -144,38 +165,46 @@
     - Participating in tracking workflow implementation;
     - Initial data importers;
     - Health Home tracking system integration layer.
-    Scala, Play Framework, PostgreSQL, Slick, TeamCity
+
+    \
+
+    Stack: Scala, Play Framework, PostgreSQL, Slick, TeamCity
   ]
 )
 
 #entry(
   title: "Senior Developer",
   institution: "DataArt",
-  location: "Voronezh, Russia",
-  date: "",
+  date: "2016-2016",
   [
-    Languages:	Python
-    Environments:	PostgreSQL, Tornado, Redis, Django Rest framework, Ansible
     The goal of the project was to develop the sales system to be used by call center
     agents to book hotels for the clients.
+
+    \
+
     Based on different criteria, the system searched hotels in multiple sources providing
     an agent with all relevant information about a client.
     The system utilized microservice architecture, which allowed decoupling all logical subsystem,
     managing and developing them independently of each other.
+
+    \
+
     Responsibilities:
     - Call dispatching service development that notifies agents about incoming phone calls;
     - Integration with internal CRM system;
     - Next Caller and Piwik integration;
     - Payment gateway integration;
-    - Back-end RESTful API development. 
+    - Back-end RESTful API development.
+
+    \
+
+    Stack:	Python, PostgreSQL, Tornado, Redis, Django Rest framework, Ansible
   ]
 )
 
-
 #entry(
   title: "Senior Software Developer",
-  institution: "MMO Turn-based Strategy Game",
-  location: "Mink, Belarus; Voronezh Russia",
+  institution: "Wargaming, Global Map",
   date: "2014-2016",
   [
     The application allowed clan leaders to plan their strategy on capturing and controlling
@@ -184,7 +213,44 @@
 
     - Preparation of new game events;
     - Fixing bugs;
-    - Implementing "mini-quests" and corresponding reward, medal system.
+    - Implemented "mini-quests" and corresponding reward, medal system.
+
+    \
+
+    Stack: Python, Django, PostgreSQL, Celery, RabbitMQ
+  ]
+)
+
+#entry(
+  title: "Senior Software Developer",
+  institution: "DataArt",
+  date: "2012-2014",
+  [
+    I worked on a web-based dashboard and computational engine that used
+    statistical methods to predict prospective markets for Drug sales.
+
+    \
+
+    Stack: ASP.NET, CSharp, VBA, MS Server
+  ]
+)
+
+#entry(
+  title: "Software Developer",
+  institution: "DataArt",
+  date: "2010-2011",
+  [
+    The application allowed clan leaders to plan their strategy on capturing and controlling
+    areas on the global world map, managing clan resources, participating in tournaments and landing battles.
+    The development was focused on back-end optimization.
+
+    - Release management;
+    - CI/DI pipelines;
+    - Design and Develop software that integrates ophthalmologic perimeters with EMR system.
+
+    \
+
+    Stack: CSharp, WPF, Silverlight
   ]
 )
 
@@ -192,21 +258,27 @@
 #entry(
   title: "Software Developer",
   institution: "KANAR Software",
-  location: "Voronezh, Russia",
   date: "2007 - 2010",
   [
     I designed and developed the first version of eSigTek - a web-based software to sign documents electronically.
     One of the features that stood out in the software was the online PDF forms editor.
     I was responsible for features planning and leading a team of two programmers and a QA.
 
+    \
+
     New feature development and bug fixing for Medical Staff Management and Recruitment System for the USA market.
     I modernized the front-end part of the system such that it works not only on IE6 and introduced PrototypeJS.
-])
+
+    \
+
+    Stack: CSharp, MS Server, jQuery
+  ]
+)
 
 #entry(
   title: "Software Developer",
   institution: "Olven-Auto",
-  date: "2003 - 2006",
+  date: "2005 - 2006",
   [
     I participated in the development of the Bus Station Control System.
     The developed solution consists of a back-end subsystem that manages bus routes,
@@ -216,29 +288,54 @@
     - I worked on the tickets exchange back-end service;
     - porting Delphi GUI application to gtkmm;
     - integration with a cash register machine, and custom PAM development.
+
+    \
+
+    Stack: Firebird, PHP, C++
   ]
 )
 
 #entry(
   title: "Web Developer",
   institution: "Zebra-Group",
-  location: "Uljjanovsk, Russia",
   date: "2003 - 2006",
   [
     - Development of modules for the company's internal CMS.
+
+    Stack: Python, PHP
   ]
 )
 
 
-
 = Education
+
+#entry(
+  title: "Genomic networks",
+  institution: "Novosibirsk State University (NSU)",
+  date: "2025",
+  []
+)
+
+#entry(
+  title: "From science to drug development",
+  institution: "Blastim",
+  date: "2022",
+  []
+)
+
+#entry(
+  title: "NGS data analysis",
+  institution: "Blastim",
+  date: "2022",
+  []
+)
 
 #entry(
   title: "Master of Science in Software Engineering",
   institution: "Voronezh State Technical University",
   location: "Voronezh, Russia",
   date: "2010",
-  [Thesis: "My thesis title"],
+  [ - ]
 )
 
 #entry(
@@ -246,7 +343,7 @@
   institution: "Ulyanovsk State Technical University",
   location: "Ulyanovsk, Russia",
   date: "2007",
-  [Thesis: "My thesis title"],
+  [ - ]
 )
 
 #entry(
@@ -254,7 +351,16 @@
   institution: "Uljanovskij Aviacionij Koledzh",
   location: "Ulyanovsk, Russia",
   date: "2004",
-  [Thesis: "My thesis title"],
+  []
 )
 
 
+= Certificates, Awards, significant side activities
+
+#entry([
+  - Bioinformatics Contest (2021);
+  - Molecular biology (2019);
+  - Third Generation Sequencing using Oxford Nanopore (2019);
+  - Bug fixes in Arm Mbed OS USB (CDC) for STM32;
+  - Co-organizer of Voronezh's radio hobbyst club.
+])
