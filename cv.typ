@@ -41,7 +41,7 @@
 
   == Others:
 
-  Apache Spark, Slurm
+  Apache Spark, Slurm, MPI
   
   #v(1fr)
 
@@ -56,20 +56,23 @@
 = About Me
 
 #entry([
-  I am a seasoned professional programmer with more than 20 years of experience in various fields and domains.
-
+  I am a seasoned professional programmer with more than 20 years of experience in various fields and domains. \
+  \
 
   In recent years, I have worked as a Rust HPC programmer in the biotech field, specializing in optimizing
   the performance and resource usage of biostatistical pipelines.
   My extensive experience as a Scala developer has given me a solid understanding of functional and type-level programming,
-  which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers.
+  which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers. \
+  \
 
   Additionally, I have completed graduate-level courses in Bioinformatics, Whole Genome (WGS) and Single-Cell Sequencing,
   and Genomic Networks. This formal training demonstrates my passion and dedication to delivering top-quality software,
-  as truly effective solutions require a deep understanding of the field.
+  as truly effective solutions require a deep understanding of the field. \
+  \
 
   My efforts, to a sensible extent, helped biologists to develop at least two molecules for treating orphan diseases,
-  and one of them is out of clinical trials.
+  and one of them is out of clinical trials. \
+  \
 
   Besides that I have contributed to the back-end development of a well-known MMO game, an IoT framework,
   a London minicab automation system, and a bus station automation project.
@@ -100,8 +103,7 @@
   [
   The project aim was to learn the structure of biological networks from omics data assessed
   with patient data using a combined constraint-based approach and Bayesian score-based method
-  (a framework based on S. Boettcher deal package) in a distributed environment.
-
+  (a framework based on S. Boettcher deal package) in a distributed environment. \
   \
 
   My responsibilies were:
@@ -123,6 +125,7 @@
   `hoconlight` crate - a peg parser and deserializer of Akka hocon configuration files.
 
   \
+  \
 
   Stack: Rust, Apache Arrow, BLAS/LAPACK (ndarray-linalg), MPI, Slurm, Apache Kafka
   ]
@@ -136,8 +139,7 @@
   [
   Design and Developed Mesos Framework to schedule and execute bioinformatics pipelines.
   The framework mostly based on Lightbend stack with addition of TypeLevel stack (circe, cats-effect, fs2)
-  for more lightweight utilities and more granular control of task termination.
-
+  for more lightweight utilities and more granular control of task termination. \
   \
 
   My responsibilies were:
@@ -146,6 +148,7 @@
   - Reviewing DOI:10.1089/cmb.2019.0210, DOI:10.3390/app11062466;
   - Coordinating two teams of developers, resolving conflic situations;
 
+  \
   \
 
   Stack: Apache Mesos, Scala 2, Lightbend stack, TypeLevel stack, Apache Kafka
@@ -171,6 +174,7 @@
     - Health Home tracking system integration layer.
 
     \
+    \
 
     Stack: Scala, Play Framework, PostgreSQL, Slick, TeamCity
   ]
@@ -182,15 +186,13 @@
   date: "2016-2016",
   [
     The goal of the project was to develop the sales system to be used by call center
-    agents to book hotels for the clients.
-
+    agents to book hotels for the clients.\
     \
 
     Based on different criteria, the system searched hotels in multiple sources providing
     an agent with all relevant information about a client.
     The system utilized microservice architecture, which allowed decoupling all logical subsystem,
-    managing and developing them independently of each other.
-
+    managing and developing them independently of each other.\
     \
 
     Responsibilities:
@@ -200,6 +202,7 @@
     - Payment gateway integration;
     - Back-end RESTful API development.
 
+    \
     \
 
     Stack:	Python, PostgreSQL, Tornado, Redis, Django Rest framework, Ansible
@@ -213,12 +216,14 @@
   [
     The application allowed clan leaders to plan their strategy on capturing and controlling
     areas on the global world map, managing clan resources, participating in tournaments and landing battles.
-    The development was focused on back-end optimization.
+    The development was focused on back-end optimization. \
+    \
 
     - Preparation of new game events;
     - Fixing bugs;
     - Implemented "mini-quests" and corresponding reward, medal system.
 
+    \
     \
 
     Stack: Python, Django, PostgreSQL, Celery, RabbitMQ
@@ -231,8 +236,7 @@
   date: "2012-2014",
   [
     I worked on a web-based dashboard and computational engine that used
-    statistical methods to predict prospective markets for Drug sales.
-
+    statistical methods to predict prospective markets for Drug sales. \
     \
 
     Stack: ASP.NET, C\#, VBA, MS Server
@@ -246,12 +250,14 @@
   [
     The application allowed clan leaders to plan their strategy on capturing and controlling
     areas on the global world map, managing clan resources, participating in tournaments and landing battles.
-    The development was focused on back-end optimization.
+    The development was focused on back-end optimization. \
+    \
 
     - Release management;
     - CI/DI pipelines;
     - Design and Develop software that integrates ophthalmologic perimeters with EMR system.
 
+    \
     \
 
     Stack: C\#, WPF, Silverlight
@@ -266,13 +272,13 @@
   [
     I designed and developed the first version of eSigTek - a web-based software to sign documents electronically.
     One of the features that stood out in the software was the online PDF forms editor.
-    I was responsible for features planning and leading a team of two programmers and a QA.
-
+    I was responsible for features planning and leading a team of two programmers and a QA. \
     \
 
     New feature development and bug fixing for Medical Staff Management and Recruitment System for the USA market.
     I modernized the front-end part of the system such that it works not only on IE6 and introduced PrototypeJS.
 
+    \
     \
 
     Stack: C\#, MS Server, jQuery
@@ -294,6 +300,7 @@
     - integration with a cash register machine, and custom PAM development.
 
     \
+    \
 
     Stack: Firebird, PHP, C++ (gtkmm)
   ]
@@ -304,7 +311,8 @@
   institution: "Zebra-Group",
   date: "2003 - 2006",
   [
-    - Development of modules for the company's internal CMS.
+    - Development of modules for the company's internal CMS. \
+    \
 
     Stack: Python, PHP
   ]
