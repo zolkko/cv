@@ -18,8 +18,11 @@
 #side[
   = Contact
   #contact-info()
+
   \
+
   #social-links()
+
   \
 
   = Skills
@@ -56,7 +59,8 @@
   I am a seasoned professional programmer with more than 20 years of experience in various fields and domains.
 
 
-  In recent years, I have worked as a Rust HPC programmer in the biotech field, specializing in optimizing the performance and resource usage of biostatistical pipelines.
+  In recent years, I have worked as a Rust HPC programmer in the biotech field, specializing in optimizing
+  the performance and resource usage of biostatistical pipelines.
   My extensive experience as a Scala developer has given me a solid understanding of functional and type-level programming,
   which enables me to deliver robust, high-quality software, that builds on the strengths Rust already offers.
 
@@ -231,7 +235,7 @@
 
     \
 
-    Stack: ASP.NET, CSharp, VBA, MS Server
+    Stack: ASP.NET, C\#, VBA, MS Server
   ]
 )
 
@@ -250,7 +254,7 @@
 
     \
 
-    Stack: CSharp, WPF, Silverlight
+    Stack: C\#, WPF, Silverlight
   ]
 )
 
@@ -271,7 +275,7 @@
 
     \
 
-    Stack: CSharp, MS Server, jQuery
+    Stack: C\#, MS Server, jQuery
   ]
 )
 
@@ -291,7 +295,7 @@
 
     \
 
-    Stack: Firebird, PHP, C++
+    Stack: Firebird, PHP, C++ (gtkmm)
   ]
 )
 
