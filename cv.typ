@@ -82,7 +82,7 @@
 = Summary
 
 #entry([
- - 20+ years of professional experience in the Information Technology industry;
+ - 10+ years of professional experience in the Information Technology industry;
  - Rich experience in Rust, Scala, Python programming;
  - Experience in team leadership;
  - Experience in software design, development, and deployment;
@@ -107,6 +107,7 @@
   \
 
   My responsibilies were:
+  - Made an extension for `rsmpi` to support return error codes. And based on those changes I implemented User-Level Fault Mitigation (MPI ULFM) logic to address partial cluster failures.
   - Performance optimization and tuning using vtune, mpip, heaptrack, dhat,
     llvm sanitizers, criterion and iai (cachegrind);
   - Algorithms optimization;
